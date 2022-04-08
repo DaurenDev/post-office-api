@@ -59,9 +59,4 @@ public class PostOfficeController {
         return postFeign.getPostById(postId);
     }
 
-    @GetMapping("/getPostDetails")
-    public List<PostResponse> getPostDetails(){
-        return postFeign.getAllPosts();
-    }
-
 }
